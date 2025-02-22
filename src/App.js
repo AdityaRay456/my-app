@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import WelcomePage from "./pages/Welcomepage.jsx";
+import GovernmentLogin from "./pages/Governmentlogin.jsx";
+import ContractorSignup from "./pages/ContractorSignup.jsx";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="/government-login" element={<GovernmentLogin />} />
+        <Route path="/contractor-signup" element={<ContractorSignup />} />
+      </Routes>
+    </Router>
   );
 }
 

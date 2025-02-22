@@ -1,13 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Remove or comment out the background-image property */
+   background-image: url('../public/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backface-visibility: visible;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50; /* Example: dark blue */
+}
+
+p {
+  color: #34495e; /* Example: medium blue */
+}
+
+a {
+  color: #3498db; /* Example: bright blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7ba8c6; /* Example: darker blue on hover */
+}
+
+.navbar-brand {
+  color: #ffffff; /* Example: white */
+}
+
+.nav-link {
+  color: #ecf0f1; /* Example: light gray */
+}
+
+.btn {
+  color: #a68585; /* Example: white text on buttons */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  color: #ecb5af; /* Example: red for code elements */
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
